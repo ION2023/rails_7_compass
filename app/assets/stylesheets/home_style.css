@@ -1,0 +1,33 @@
+/* change bg color to blue line 11320 on styles */
+header.masthead {
+    background: linear-gradient(0deg, #a2dafa 0%, #026ead 100%) !important; 
+  }
+
+/* change circle color to blue line 11345 on styles */
+header.masthead .bg-circle {
+    background: linear-gradient(0deg, #026ead 0%, #a2dafa 100%) !important; 
+  }
+
+/* Navigation line 11313 */
+.navbar .navbar-expand-lg .navbar-dark .navbar-custom .fixed-top {
+    background-color: rgba(0, 0, 0, 0.7) !important;   
+}
+
+/* Nav links */
+.navbar-dark > .navbar-nav > .nav-link {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+  /*.btn .btn-primary .btn-xl .rounded-pill .mt-5 {
+      background-color: #ffffff !important;
+      color: #026ead !important;
+  }
+  .btn-primary {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+  }
+  .btn-xl {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+  } */
