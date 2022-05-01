@@ -1,13 +1,13 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
   <div class="container px-5">
-    <a class="navbar-brand" href="#page-top">Compass Dog Rescue</a>
+    <%= link_to "Compass Dog Rescue", root_path, class: "navbar-brand" %>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li><%= link_to "About", home_about_path, class: "nav-link" %></li>
             <li><%= link_to "Adoptable Dogs", home_about_path, class: "nav-link" %></li>
-            <li><%= link_to "Adoption Form", home_about_path, class: "nav-link" %></li>
+            <li><%= link_to "Adoption Form", home_adoption_path, class: "nav-link" %></li>
             <li><%= link_to "Contact Us", home_about_path, class: "nav-link" %></li>
           </ul>
         </div>

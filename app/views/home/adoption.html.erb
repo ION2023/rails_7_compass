@@ -1,0 +1,172 @@
+<div class="container adoption">
+    <h1 class="adoption-heading">Compass Dog Rescue</h1>
+    <h1 class="adoption-heading">Adoption Application</h1>
+    <form>
+        <%= form_with do |form| %>
+            <div class="form-row">
+                <%= form.label :first_name, label: 'First name'  %>
+                <%= form.text_field :first_name, class: "f-name" %>
+                <%= form.label :last_name, label: 'Last name' %>
+                <%= form.text_field :last_name, class: "l-name" %>
+            </div> 
+            <div class="form-row">
+                <%= form.label :address, label: 'Address' %>
+                <%= form.text_field :address, class: "address" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :city, label: 'City' %>
+                <%= form.text_field :city, class: "city" %>
+                <%= form.label :state, label: 'State' %>
+                <%= form.text_field :state, class: "st" %>
+                <%= form.label :zip_code, label: 'Zip Code' %>
+                <%= form.text_field :zip_code, class: "zip" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :primary_phone, label: 'Primary Phone' %>
+                <%= form.text_field :primary_phone, class: "phone" %>
+                <%= form.label :secondary_phone, label: 'Secondary Phone' %>
+                <%= form.text_field :secondary_phone, class: "phone" %>
+            </div>
+            <div class="form-row">  
+                <%= form.label :email, label: 'Email:' %>
+                <%= form.email_field :email, class: "email" %>  
+            </div>
+                
+            <h2 class="adoption-heading">Household Information</h2>
+            <div class="form-row">
+                <%= form.label :fence, "Do you have a 6 foot fenced in yard?" %>
+                <%= form.radio_button :yes_fence, "Yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_fence, "No" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row">    
+                <%= form.label :fence_type, "What type of fence do you have?" %>
+                <%= form.label :wood, "Wood" %>
+                <%= form.radio_button :fence_wood, "wood" %>
+                <%= form.label :metal, "Metal" %>
+                <%= form.radio_button :fence_metal, "metal" %>
+            </div>
+                <div class="form-row">
+                <%= form.label :pet_dogs, "Do you have dogs?" %>
+                <%= form.radio_button :yes_dogs, "Yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_dogs, "No" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :pet_cats, "Do you have cats?" %>
+                <%= form.radio_button :yes_cats, "Yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_cats, "No" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :children, "Do you have children under 12 yrs old?" %>
+                <%= form.radio_button :yes_children, "Yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_children, "Yes" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row"> 
+                <%= form.label :landlord, "Do you have permission fron your landlord to own a dog?" %>
+                <%= form.radio_button :yes_landlord, "Yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_landlord, "No" %>
+                <%= form.label :no, "No" %> 
+            </div>
+                <div class="form-row">  
+                <%= form.label :home_alone, "How many hours per day will this dog be home alone?" %>
+                <%= form.number_field :home_alone, in: 1..24 %>
+            </div>
+            <div class="form-row">
+                <%= "What form of flea and tick prevention do you plan to use for your new dog?" %>
+                <%= form.radio_button :collar, "collar" %>
+                <%= form.label :collar, "Flea and tick collar" %>
+                <%= form.radio_button :topical, "Topical" %>
+                <%= form.label :topical, "Topical" %>
+                <%= form.radio_button :pill, "pill" %>
+                <%= form.label :pill, "Pill" %>
+            </div>
+            <div class="form-row">
+                <%= "What form of heartworm prevention do you plan to use for your new dog?" %>
+                <%= form.radio_button :heartworm_pill, "pill" %>
+                <%= form.label :collar, "Pill" %>
+                <%= form.radio_button :heartworm_injection, "injection" %>
+                <%= form.label :heartworm_injection, "Injection" %>
+                <%= form.radio_button :heartworm_chewable, "chewable" %>
+                <%= form.label :heartworm_chewable, "Chewable" %>
+            </div>
+                <div class="form-row">
+                <%= form.label :sleep, "Will your dog sleep inside or outside at night?" %>
+                <%= form.radio_button :inside, "inside" %>
+                <%= form.label :inside, "Inside" %>
+                <%= form.radio_button :outside, "outside" %>
+                <%= form.label :outside, "Outside" %>
+            </div> 
+            
+            <h2 class="adoption-heading">Veterinarian Information</h2>
+            <div class="form-row">
+                <%= form.label :first_name, label: "First Name:" %>
+                <%= form.text_field :vet_first_name, class: "f-name" %>
+                <%= form.label :last_name, label: "Last Name:" %>
+                <%= form.text_field :vet_last_name, class: "l-name" %> 
+           </div>
+            <div class="form-row">
+                <%= form.label :address, label: "Address:" %>
+                <%= form.text_field :vet_address, class: "address" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :city, label: "City:" %>
+                <%= form.text_field :vet_city, class: "city"%>
+                <%= form.label :state, label: "State:" %>
+                <%= form.text_field :vet_state, class: "st" %>
+                <%= form.label :zip_code, label: "Zip Code:" %>
+                <%= form.text_field :vet_zip_code, class: "zip" %>
+            </div>
+          <div class="form-row">
+                <%= form.label :phone, label: "Phone" %>
+                <%= form.text_field :phone, class: "phone" %>
+                <%= form.label :website, label: "Website" %>
+                <%= form.text_field :website, class: "website" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :email, label: "Email:" %>
+                <%= form.email_field :email, class: "email" %>
+            </div>
+
+            <h2 class="adoption-heading">Additional Information</h2>
+            <div class="form-row">
+                <%= form.label :heartworm, "Do you agree to provide monthly heartworm and flea prevention?" %>
+                <%= form.radio_button :yes_meds, "yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_meds, "no" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :training, "Do you agree to provide training if necessary?" %>
+                <%= form.radio_button :yes_training, "yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_training, "no" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row">
+                <%= form.label :training, "Do you agree to a home visit?" %>
+                <%= form.radio_button :yes_visit, "yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_visit, "no" %>
+                <%= form.label :no, "No" %>
+            </div>
+            <div class="form-row">   
+                <%= form.label :return, "Do you agreet to contact Compass Dog Rescue and return your dog if you are unable to take care of it?" %>
+                <%= form.radio_button :yes_return, "yes" %>
+                <%= form.label :yes, "Yes" %>
+                <%= form.radio_button :no_return, "no" %>
+                <%= form.label :no, "No" %>
+            </div>
+        <% end %>
+    </form>
+    <div class="btn-submit">
+        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Submit</a>
+    </div>
+</div>

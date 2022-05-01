@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   get 'home/about'
 
-  get '/js/scripts.js'
+  get 'home/adoption'
+
 end

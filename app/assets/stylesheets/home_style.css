@@ -18,16 +18,56 @@ header.masthead .bg-circle {
     color: rgba(0, 0, 0, 0.7) !important;
 }
 
+/* Adoption Form */
+.container.adoption {
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
 
-  /*.btn .btn-primary .btn-xl .rounded-pill .mt-5 {
-      background-color: #ffffff !important;
-      color: #026ead !important;
-  }
-  .btn-primary {
-      background-color: #ffffff !important;
-      color: #000000 !important;
-  }
-  .btn-xl {
-      background-color: #ffffff !important;
-      color: #000000 !important;
-  } */
+.adoption-heading {
+    text-align: center;
+}
+/* Center fields */
+.form-row {
+    margin: 20px;
+}
+
+/* Align fields */
+.f-name, .l-name {
+    width: 300px;
+}
+/* Widen and align */
+.phone {
+    width: 258px;
+}
+
+.website {
+    width: 385px;
+}
+
+/* Length city, st, zip fields */
+.city {
+    width: 410px;
+}
+
+.st, .zip {
+    width: 100px
+}
+
+.email {
+    width: 720px;
+}
+/* Widen addr field */
+.address {
+    width: 685px;
+    margin-left: 15px;
+}
+
+  .btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  } 
