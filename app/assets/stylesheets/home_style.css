@@ -17,13 +17,22 @@ header.masthead .bg-circle {
 .navbar-dark > .navbar-nav > .nav-link {
     color: rgba(0, 0, 0, 0.7) !important;
 }
+/* Index Pg addl space between rows */
+.row.gx-5.align-items-center {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+ /* Index Pg resize pics */
+.img-fluid {
+    max-height: 540px;
+    max-width: 450px;
+}
 
 /* Adoption Form */
 .container.adoption {
     margin-top: 100px;
     padding-left: 200px;
-    padding-right: 200px;
-    
+    padding-right: 200px;   
 }
 
 .adoption-heading {
@@ -47,7 +56,7 @@ header.masthead .bg-circle {
     width: 385px;
 }
 
-/* Length city, st, zip fields */
+/* Length city, st, zip, emails fields and align on rt edge */
 .city {
     width: 410px;
 }
