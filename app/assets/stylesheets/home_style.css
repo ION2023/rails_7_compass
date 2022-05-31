@@ -80,3 +80,46 @@ header.masthead .bg-circle {
     align-items: center;
     padding-bottom: 20px;
   } 
+
+  /* Contact Us Pg */
+
+  .container.contactus {
+    margin-top: 55px;
+    padding-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px; 
+    padding-bottom: 200px;
+}
+
+/* Set width for fields */
+.contactus-email, .contactus-f-name, .contactus-l-name {
+    width: 400px;
+}
+
+.contactus-f-name {
+    margin-left: 4px;
+}
+
+.contactus-l-name {
+    margin-left: 5px;
+}
+
+.contactus-email {
+    margin-left: 5px;
+}
+
+.contactus-email-label {
+    margin-right: 35px;
+}
+
+.message-label {
+    margin-right: 10px;
+}
+
+.message {
+    min-width: 400px;
+    min-height: 20px;
+    margin-left: 5px;
+}
+
+

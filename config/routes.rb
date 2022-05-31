@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get 'home/adoption'
 
+  get 'home/contactus'
+
 end

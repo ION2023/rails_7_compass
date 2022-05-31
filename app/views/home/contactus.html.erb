@@ -1,0 +1,28 @@
+
+<div class="container contactus">
+
+    <h1 class="adoption-heading">Contact Us</h1>
+    <form>
+        <%= form_with do |form| %>
+            <div class="form-row">
+            <%= form.label :first_name, label: 'First name'  %>
+            <%= form.text_field :first_name, class: "contactus-f-name" %>
+            </div> 
+            <div class="form-row"> 
+            <%= form.label :last_name, label: 'Last name' %>
+            <%= form.text_field :last_name, class: "contactus-l-name" %>
+            </div> 
+            <div class="form-row">  
+                <%= form.label :email, class: "contactus-email-label", label: 'Email:' %>
+                <%= form.email_field :email, class: "contactus-email" %>  
+            </div>
+                
+            <div class="form-row">
+            <%= form.label :message, class: "message-label", label: 'message' %>
+            <%= form.text_area :message, class: "message" %>
+            </div>
+            <% end %>
+        </div> 
+    </form>
+    </div>
+</div>

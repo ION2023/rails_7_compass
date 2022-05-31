@@ -8,4 +8,7 @@ class HomeController < ApplicationController
   def adoption
   end
 
+  def contactus
+  end
+
 end
